@@ -1,0 +1,40 @@
+﻿<Window x:Class="Lab1WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab1WPF"
+        mc:Ignorable="d"
+        Title="Калькулятор" Height="600" Width="400">
+    <Window.Background>
+        <ImageBrush/>
+    </Window.Background>
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="фон.JPG" TileMode="Tile"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="182*"/>
+            <ColumnDefinition Width="101*"/>
+            <ColumnDefinition Width="9*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock HorizontalAlignment="Center" Margin="10,15,0,0" TextWrapping="Wrap" Text="Результат" VerticalAlignment="Top" Width="370" Grid.ColumnSpan="2" Height="100" Background="Black" FontFamily="Franklin Gothic Book" TextAlignment="Right" FontSize="72" Foreground="White"/>
+        <Button Content="0" HorizontalAlignment="Left" Margin="10,449,0,20" Width="86" FontSize="36" FontFamily="Franklin Gothic Demi" Background="#FFCBCBCB" BorderBrush="#FF030303" Foreground="Black" BorderThickness="2" ClipToBounds="True"/>
+        <Button Content="7" HorizontalAlignment="Left" Margin="10,344,0,125" Width="86" FontSize="36" FontFamily="Franklin Gothic Demi" Background="#FFCBCBCB" BorderBrush="#FF030303" Foreground="Black" BorderThickness="2" ClipToBounds="True" Click="Button_Click"/>
+        <Button Content="4" HorizontalAlignment="Left" Margin="10,239,0,230" Width="86" FontSize="36" FontFamily="Franklin Gothic Demi" Background="#FFCBCBCB" BorderBrush="#FF030303" Foreground="Black" BorderThickness="2" ClipToBounds="True"/>
+        <Button Content="1" HorizontalAlignment="Left" Margin="10,134,0,335" Width="86" FontSize="36" FontFamily="Franklin Gothic Demi" Background="#FFCBCBCB" BorderBrush="#FF030303" Foreground="Black" BorderThickness="2" ClipToBounds="True"/>
+        <Button Content="," HorizontalAlignment="Left" Margin="100,449,0,20" Width="86" FontSize="36" FontFamily="Franklin Gothic Demi" Background="#FFCBCBCB" BorderBrush="#FF030303" Foreground="Black" BorderThickness="2" ClipToBounds="True"/>
+        <Button Content="8" HorizontalAlignment="Left" Margin="101,344,0,125" Width="86" FontSize="36" FontFamily="Franklin Gothic Demi" Background="#FFCBCBCB" BorderBrush="#FF030303" Foreground="Black" BorderThickness="2" ClipToBounds="True" Click="Button_Click"/>
+        <Button Content="5" HorizontalAlignment="Left" Margin="101,239,0,230" Width="86" FontSize="36" FontFamily="Franklin Gothic Demi" Background="#FFCBCBCB" BorderBrush="#FF030303" Foreground="Black" BorderThickness="2" ClipToBounds="True"/>
+        <Button Content="2" HorizontalAlignment="Left" Margin="101,134,0,335" Width="86" FontSize="36" FontFamily="Franklin Gothic Demi" Background="#FFCBCBCB" BorderBrush="#FF030303" Foreground="Black" BorderThickness="2" ClipToBounds="True"/>
+        <Button Content="=" HorizontalAlignment="Left" Margin="192,449,0,20" Width="86" FontSize="36" FontFamily="Franklin Gothic Demi" Background="#FFCBCBCB" BorderBrush="#FF030303" Foreground="Black" BorderThickness="2" ClipToBounds="True" Grid.ColumnSpan="2"/>
+        <Button Content="9" HorizontalAlignment="Left" Margin="192,344,0,125" Width="86" FontSize="36" FontFamily="Franklin Gothic Demi" Background="#FFCBCBCB" BorderBrush="#FF030303" Foreground="Black" BorderThickness="2" ClipToBounds="True" Click="Button_Click" Grid.ColumnSpan="2"/>
+        <Button Content="6" HorizontalAlignment="Left" Margin="192,239,0,230" Width="86" FontSize="36" FontFamily="Franklin Gothic Demi" Background="#FFCBCBCB" BorderBrush="#FF030303" Foreground="Black" BorderThickness="2" ClipToBounds="True" Grid.ColumnSpan="2"/>
+        <Button Content="3" HorizontalAlignment="Left" Margin="192,134,0,335" Width="86" FontSize="36" FontFamily="Franklin Gothic Demi" Background="#FFCBCBCB" BorderBrush="#FF030303" Foreground="Black" BorderThickness="2" ClipToBounds="True" Grid.ColumnSpan="2"/>
+        <Button Content="/" HorizontalAlignment="Right" Margin="0,449,10,20" Width="86" FontSize="36" FontFamily="Franklin Gothic Demi" Background="#FFCBCBCB" BorderBrush="#FF030303" Foreground="Black" BorderThickness="2" ClipToBounds="True" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Button Content="*" HorizontalAlignment="Right" Margin="0,344,10,125" Width="86" FontSize="36" FontFamily="Franklin Gothic Demi" Background="#FFCBCBCB" BorderBrush="#FF030303" Foreground="Black" BorderThickness="2" ClipToBounds="True" Click="Button_Click" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Button Content="-" HorizontalAlignment="Right" Margin="0,239,10,230" Width="86" FontSize="36" FontFamily="Franklin Gothic Demi" Background="#FFCBCBCB" BorderBrush="#FF030303" Foreground="Black" BorderThickness="2" ClipToBounds="True" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="52,134,0,335" Width="86" FontSize="36" FontFamily="Franklin Gothic Demi" Background="#FFCBCBCB" BorderBrush="#FF030303" Foreground="Black" BorderThickness="2" ClipToBounds="True" Grid.Column="1" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Window>
